@@ -1,0 +1,223 @@
+/*variables to set default or set values to avoid any human mistakes.*/
+:root
+{
+    --primary-font-color: beige;
+    --default-padding-size: 1rem;
+    --default-bgcolor:rgba(0, 183, 255, 0.651);
+    --default-font: "Noto Sans JP";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+h1, h4
+{
+    color: var(--primary-font-color);
+    text-align: center;
+    font-family: var(--default-font);
+}
+
+#hcont1 p, #acont1 p, #bcont1 p,#ccont1 p 
+{
+    color: var(--primary-font-color);
+    padding: 1rem;
+    text-align: justify;
+    font-family: var(--default-font);
+}
+/*^^testing code*/
+
+/*This one's important but annoying so keep it, it's just to keep the bars from going haywire*/
+ul 
+{
+    list-style-type: none;
+    display: flex;
+    padding: 0.5rem;
+}
+
+
+/*This line is for the Navigation bar, I used rem cause its easier to setup for being mobile friendly*/
+#nav li, a 
+{
+    padding: 0.2rem;
+    font-size: 2vh;
+    font-family: var(--default-font);
+    color: black;
+    text-decoration: none;
+    left: 5px;
+}
+
+/*the container for both the placeholder logo and the word logo*/
+#PL
+{
+    color: beige;
+    position: relative;
+    padding: 0rem;
+    display: flex;
+    align-items: center; /* Aligns div and anchor vertically */
+    justify-content: left; /* Aligns them horizontally */
+    gap: 0px; /* Adds space between the div and anchor */
+}
+
+#logo
+{
+    bottom: 10px;
+    color: var(--primary-font-color);
+}
+
+#logo1
+{
+    height: 10%;
+    width: 10%;
+
+}
+
+#hb
+{
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color:var(--default-bgcolor);
+    margin: 0 auto;
+    padding: 0;
+}
+
+li
+{
+    margin: 0.2rem;    
+    border: black;   
+}
+
+/*This one's for the background which uses a body with an id of "BG"*/
+body
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))/*,url(Images/placeholder.png)*/;
+    position: sticky;
+    top: 0rem;
+    background-attachment: local;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: lightblue;
+}
+
+#nav li a:hover
+{
+    transition-duration: 100ms;
+    color: beige;
+    margin: 0.2rem;
+    transition-timing-function: ease-in-out;
+}
+
+#nav li a.active
+{
+    font-weight: bold;
+    color: beige;
+}
+
+#hcont1, #acont1 ,#bcont1, #ccont1
+{
+    background-position: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+#acont1
+{
+    justify-content: center;
+    display: flex;
+}
+
+#acont1 img
+{
+    opacity: 0.5;
+    padding: 1rem;
+    max-width: 80%; /* Ensures the image doesn't exceed the container's width */
+    height: auto;    /* Maintains aspect ratio */
+
+}
+
+#acont1 p
+{
+    align-items: center;
+}
+
+
+#hcont2, #bcont2, #ccont2
+{
+    color: var(--primary-font-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.3rem;
+}
+
+#acont2, #hcont2
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 4rem;
+}
+
+
+#acont2 img
+{
+    width: auto;
+    height: 180px;
+    border: 4px solid var(--default-bgcolor);
+    border-radius: 8px; 
+}
+
+#hcont2 video
+{
+    border: 5px solid var(--default-bgcolor); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: 180px;
+}
+
+.centered-line {
+    width: 95%; 
+    border-radius: 1rem;
+    border: 3px solid orange; 
+}
+
+#div1
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: var(--default-padding-size);
+    border-radius: 0.5rem;
+}
+
+.feet
+{
+    position: relative;
+    display: flex;
+    align-items: center; /* Aligns div and anchor vertically */
+    justify-content: center; /* Aligns them horizontally */
+    gap: 1rem; /* Adds space between the div and anchor */
+}
+
+.feet img
+{
+    height: 3rem;
+}
+
+
+
+.footerstuff p
+{
+    padding: 1rem;
+    color: var(--primary-font-color);
+}
+
+.footerstuff
+{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}

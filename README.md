@@ -1,1 +1,1 @@
-https://zerofourdesu.github.io/Pekora/
+zerofourdesu.github.io/Pekora/
